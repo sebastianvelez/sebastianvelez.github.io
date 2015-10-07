@@ -10,7 +10,7 @@
 
 <meta name="author" content="JS Vélez" />
 
-<meta name="date" content="2015-10-02" />
+<meta name="date" content="2015-10-07" />
 
 <title>Merger with complements and bundling: The case of Claro, Colombia</title>
 
@@ -91,7 +91,7 @@ img {
 <div id="header">
 <h1 class="title">Merger with complements and bundling: The case of Claro, Colombia</h1>
 <h4 class="author"><em>JS Vélez</em></h4>
-<h4 class="date"><em>October 02, 2015</em></h4>
+<h4 class="date"><em>October 07, 2015</em></h4>
 </div>
 
 <div id="TOC">
@@ -119,40 +119,169 @@ This is the third handout I produced for Mo. It contains:
 <thead>
 <tr class="header">
 <th align="left">who.in.town</th>
-<th align="right">down_before</th>
-<th align="right">sd_before</th>
-<th align="right">down_after</th>
-<th align="right">sd_after</th>
+<th align="right">n.be</th>
+<th align="right">speed.be</th>
+<th align="right">n.af</th>
+<th align="right">speed.af</th>
+<th align="right">diff</th>
+<th align="right">lb95</th>
+<th align="right">ub95</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">both.in.town</td>
-<td align="right">2001</td>
-<td align="right">1542</td>
-<td align="right">2683</td>
-<td align="right">1640</td>
+<td align="left">none.in.town</td>
+<td align="right">4065</td>
+<td align="right">1187.95</td>
+<td align="right">2947</td>
+<td align="right">1696.55</td>
+<td align="right">508.60</td>
+<td align="right">454.86</td>
+<td align="right">562.34</td>
 </tr>
 <tr class="even">
-<td align="left">coltel.in.town</td>
-<td align="right">1519</td>
-<td align="right">1184</td>
-<td align="right">2281</td>
-<td align="right">1374</td>
+<td align="left">telmex.in.town</td>
+<td align="right">4794</td>
+<td align="right">2542.19</td>
+<td align="right">3542</td>
+<td align="right">3424.86</td>
+<td align="right">882.67</td>
+<td align="right">769.83</td>
+<td align="right">995.51</td>
 </tr>
 <tr class="odd">
-<td align="left">none.in.town</td>
-<td align="right">1363</td>
-<td align="right">1194</td>
-<td align="right">2350</td>
-<td align="right">1499</td>
+<td align="left">coltel.in.town</td>
+<td align="right">7542</td>
+<td align="right">1521.62</td>
+<td align="right">4885</td>
+<td align="right">1632.64</td>
+<td align="right">111.02</td>
+<td align="right">74.94</td>
+<td align="right">147.10</td>
 </tr>
 <tr class="even">
-<td align="left">telmex.in.tow</td>
-<td align="right">1988</td>
-<td align="right">1550</td>
-<td align="right">2684</td>
-<td align="right">1656</td>
+<td align="left">both.in.town</td>
+<td align="right">13544</td>
+<td align="right">2363.54</td>
+<td align="right">10850</td>
+<td align="right">2998.98</td>
+<td align="right">635.44</td>
+<td align="right">576.22</td>
+<td align="right">694.67</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Mean number of subscribers</caption>
+<thead>
+<tr class="header">
+<th align="left">who.in.town</th>
+<th align="right">n.be</th>
+<th align="right">subs.be</th>
+<th align="right">n.af</th>
+<th align="right">subs.af</th>
+<th align="right">diff</th>
+<th align="right">lb95</th>
+<th align="right">ub95</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">none.in.town</td>
+<td align="right">4065</td>
+<td align="right">151.14</td>
+<td align="right">2947</td>
+<td align="right">173.56</td>
+<td align="right">22.42</td>
+<td align="right">5.51</td>
+<td align="right">39.33</td>
+</tr>
+<tr class="even">
+<td align="left">telmex.in.town</td>
+<td align="right">4794</td>
+<td align="right">937.49</td>
+<td align="right">3542</td>
+<td align="right">851.29</td>
+<td align="right">-86.19</td>
+<td align="right">-248.90</td>
+<td align="right">76.51</td>
+</tr>
+<tr class="odd">
+<td align="left">coltel.in.town</td>
+<td align="right">7542</td>
+<td align="right">117.73</td>
+<td align="right">4885</td>
+<td align="right">137.93</td>
+<td align="right">20.20</td>
+<td align="right">10.59</td>
+<td align="right">29.81</td>
+</tr>
+<tr class="even">
+<td align="left">both.in.town</td>
+<td align="right">13544</td>
+<td align="right">987.20</td>
+<td align="right">10850</td>
+<td align="right">949.36</td>
+<td align="right">-37.85</td>
+<td align="right">-162.87</td>
+<td align="right">87.18</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption>Mean number of plans per firm per city</caption>
+<thead>
+<tr class="header">
+<th align="left">who.in.town</th>
+<th align="right">n.be</th>
+<th align="right">plans.be</th>
+<th align="right">n.af</th>
+<th align="right">plans.af</th>
+<th align="right">diff</th>
+<th align="right">lb95</th>
+<th align="right">ub95</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">none.in.town</td>
+<td align="right">4065</td>
+<td align="right">8.156704</td>
+<td align="right">2947</td>
+<td align="right">9.603325</td>
+<td align="right">1.4466218</td>
+<td align="right">1.0844701</td>
+<td align="right">1.8087736</td>
+</tr>
+<tr class="even">
+<td align="left">telmex.in.town</td>
+<td align="right">4794</td>
+<td align="right">35.458907</td>
+<td align="right">3542</td>
+<td align="right">35.209769</td>
+<td align="right">-0.2491385</td>
+<td align="right">-1.4574307</td>
+<td align="right">0.9591537</td>
+</tr>
+<tr class="odd">
+<td align="left">coltel.in.town</td>
+<td align="right">7542</td>
+<td align="right">7.177141</td>
+<td align="right">4885</td>
+<td align="right">7.214534</td>
+<td align="right">0.0373929</td>
+<td align="right">-0.1099503</td>
+<td align="right">0.1847362</td>
+</tr>
+<tr class="even">
+<td align="left">both.in.town</td>
+<td align="right">13544</td>
+<td align="right">20.788836</td>
+<td align="right">10850</td>
+<td align="right">22.972995</td>
+<td align="right">2.1841590</td>
+<td align="right">1.8147689</td>
+<td align="right">2.5535491</td>
 </tr>
 </tbody>
 </table>
@@ -179,64 +308,64 @@ speed_{ijct} = \mu + \delta_{s,t} + \alpha_j + \gamma is\_merged_{jt} + \phi fac
 <tbody>
 <tr class="odd">
 <td align="left">(Intercept)</td>
-<td align="right">-407.7110</td>
-<td align="right">1449.45</td>
-<td align="left"></td>
-<td align="right">-491.9138</td>
-<td align="right">1617.97</td>
+<td align="right">3231.1592</td>
+<td align="right">1087.95</td>
+<td align="left">**</td>
+<td align="right">1429.0193</td>
+<td align="right">1278.03</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left">firmCOLOMBIA TELECOMUNICACIONES S.A. ESP</td>
-<td align="right">1139.0444</td>
-<td align="right">917.89</td>
-<td align="left"></td>
-<td align="right">1223.2471</td>
-<td align="right">1025.22</td>
+<td align="right">-2278.1592</td>
+<td align="right">393.27</td>
+<td align="left">***</td>
+<td align="right">-476.0193</td>
+<td align="right">607.56</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left">firmTELMEX COLOMBIA S.A.</td>
-<td align="right">3764.5518</td>
-<td align="right">917.88</td>
-<td align="left">***</td>
-<td align="right">3993.0177</td>
-<td align="right">1025.12</td>
-<td align="left">***</td>
+<td align="right">-555.8779</td>
+<td align="right">394.84</td>
+<td align="left"></td>
+<td align="right">1265.3918</td>
+<td align="right">607.02</td>
+<td align="left">*</td>
 </tr>
 <tr class="even">
 <td align="left">is.mergedTRUE</td>
-<td align="right">494.8674</td>
-<td align="right">51.08</td>
+<td align="right">608.0460</td>
+<td align="right">48.58</td>
 <td align="left">***</td>
-<td align="right">538.0738</td>
-<td align="right">74.43</td>
+<td align="right">720.7915</td>
+<td align="right">72.27</td>
 <td align="left">***</td>
 </tr>
 <tr class="odd">
 <td align="left">faces.mergedTRUE</td>
-<td align="right">776.6953</td>
-<td align="right">42.42</td>
+<td align="right">915.5980</td>
+<td align="right">41.25</td>
 <td align="left">***</td>
-<td align="right">857.5375</td>
-<td align="right">63.76</td>
+<td align="right">1004.2504</td>
+<td align="right">63.94</td>
 <td align="left">***</td>
 </tr>
 <tr class="even">
 <td align="left">adj. R-squared</td>
-<td align="right">0.1913</td>
+<td align="right">0.2317</td>
 <td align="right">NA</td>
 <td align="left">NA</td>
-<td align="right">0.1806</td>
+<td align="right">0.2231</td>
 <td align="right">NA</td>
 <td align="left">NA</td>
 </tr>
 <tr class="odd">
 <td align="left">Observations</td>
-<td align="right">69567.0000</td>
+<td align="right">40575.0000</td>
 <td align="right">NA</td>
 <td align="left">NA</td>
-<td align="right">39434.0000</td>
+<td align="right">21917.0000</td>
 <td align="right">NA</td>
 <td align="left">NA</td>
 </tr>
@@ -268,91 +397,91 @@ speed_{ijct} = \mu + \delta_{s,t} + \alpha_j + \gamma_1 coltel\_merged_{jt} + \g
 <tbody>
 <tr class="odd">
 <td align="left">(Intercept)</td>
-<td align="right">-448.637</td>
-<td align="right">1458.10</td>
-<td align="left"></td>
-<td align="right">-508.7109</td>
-<td align="right">1627.51</td>
+<td align="right">2868.8576</td>
+<td align="right">1097.31</td>
+<td align="left">**</td>
+<td align="right">1488.3163</td>
+<td align="right">1311.69</td>
 <td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left">firmCOLOMBIA TELECOMUNICACIONES S.A. ESP</td>
-<td align="right">1179.971</td>
-<td align="right">923.48</td>
-<td align="left"></td>
-<td align="right">1240.0442</td>
-<td align="right">1031.45</td>
+<td align="right">-1915.8576</td>
+<td align="right">398.34</td>
+<td align="left">***</td>
+<td align="right">-535.3163</td>
+<td align="right">660.64</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left">firmTELMEX COLOMBIA S.A.</td>
-<td align="right">3587.159</td>
-<td align="right">923.54</td>
-<td align="left">***</td>
-<td align="right">3863.3068</td>
-<td align="right">1031.41</td>
-<td align="left">***</td>
+<td align="right">-413.2823</td>
+<td align="right">398.33</td>
+<td align="left"></td>
+<td align="right">980.4496</td>
+<td align="right">659.81</td>
+<td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left">col.mergedTRUE</td>
-<td align="right">-338.376</td>
-<td align="right">60.15</td>
+<td align="right">-377.4507</td>
+<td align="right">55.48</td>
 <td align="left">***</td>
-<td align="right">-381.2293</td>
-<td align="right">88.55</td>
+<td align="right">-435.3699</td>
+<td align="right">85.12</td>
 <td align="left">***</td>
 </tr>
 <tr class="odd">
 <td align="left">tel.mergedTRUE</td>
-<td align="right">780.783</td>
-<td align="right">66.10</td>
+<td align="right">922.3242</td>
+<td align="right">60.94</td>
 <td align="left">***</td>
-<td align="right">700.0994</td>
-<td align="right">92.64</td>
+<td align="right">966.4442</td>
+<td align="right">86.88</td>
 <td align="left">***</td>
 </tr>
 <tr class="even">
 <td align="left">col.merged.cityTRUE</td>
-<td align="right">229.509</td>
-<td align="right">67.61</td>
+<td align="right">367.9131</td>
+<td align="right">67.10</td>
 <td align="left">***</td>
-<td align="right">392.6359</td>
-<td align="right">105.97</td>
+<td align="right">421.5946</td>
+<td align="right">108.12</td>
 <td align="left">***</td>
 </tr>
 <tr class="odd">
 <td align="left">tel.merged.cityTRUE</td>
-<td align="right">459.097</td>
-<td align="right">65.78</td>
+<td align="right">614.2079</td>
+<td align="right">63.22</td>
 <td align="left">***</td>
-<td align="right">547.0582</td>
-<td align="right">96.63</td>
+<td align="right">686.5127</td>
+<td align="right">96.13</td>
 <td align="left">***</td>
 </tr>
 <tr class="even">
 <td align="left">both.merged.cityTRUE</td>
-<td align="right">-12.151</td>
-<td align="right">76.47</td>
-<td align="left"></td>
-<td align="right">-40.3473</td>
-<td align="right">113.68</td>
+<td align="right">-169.7225</td>
+<td align="right">72.78</td>
+<td align="left">*</td>
+<td align="right">-101.6845</td>
+<td align="right">112.08</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left">adj. R-squared</td>
-<td align="right">0.194</td>
+<td align="right">0.2359</td>
 <td align="right">NA</td>
 <td align="left">NA</td>
-<td align="right">0.1825</td>
+<td align="right">0.2264</td>
 <td align="right">NA</td>
 <td align="left">NA</td>
 </tr>
 <tr class="even">
 <td align="left">Observations</td>
-<td align="right">67699.000</td>
+<td align="right">41087.0000</td>
 <td align="right">NA</td>
 <td align="left">NA</td>
-<td align="right">38488.0000</td>
+<td align="right">22181.0000</td>
 <td align="right">NA</td>
 <td align="left">NA</td>
 </tr>
@@ -382,55 +511,55 @@ speed_{ijct} = \mu + \delta_{s,t} + \alpha_j + \gamma_1 coltel\_merged_{jt} + \g
 <tbody>
 <tr class="odd">
 <td align="left">(Intercept)</td>
-<td align="right">11.2334</td>
-<td align="right">0.2389</td>
+<td align="right">11.2383</td>
+<td align="right">0.2394</td>
 <td align="left">***</td>
-<td align="right">11.1383</td>
-<td align="right">0.2518</td>
+<td align="right">11.1416</td>
+<td align="right">0.2525</td>
 <td align="left">***</td>
 </tr>
 <tr class="even">
 <td align="left">firmTELMEX COLOMBIA S.A.</td>
-<td align="right">-2.0656</td>
-<td align="right">0.2386</td>
+<td align="right">-2.0668</td>
+<td align="right">0.2391</td>
 <td align="left">***</td>
-<td align="right">-2.1203</td>
-<td align="right">0.2513</td>
+<td align="right">-2.1211</td>
+<td align="right">0.2520</td>
 <td align="left">***</td>
 </tr>
 <tr class="odd">
 <td align="left">is.mergedTRUE</td>
-<td align="right">-0.0527</td>
-<td align="right">0.0060</td>
+<td align="right">-0.0480</td>
+<td align="right">0.0061</td>
 <td align="left">***</td>
-<td align="right">-0.0239</td>
-<td align="right">0.0078</td>
-<td align="left">**</td>
+<td align="right">-0.0166</td>
+<td align="right">0.0079</td>
+<td align="left">*</td>
 </tr>
 <tr class="even">
 <td align="left">faces.mergedTRUE</td>
-<td align="right">-0.0385</td>
-<td align="right">0.0041</td>
+<td align="right">-0.0394</td>
+<td align="right">0.0042</td>
 <td align="left">***</td>
-<td align="right">-0.0274</td>
-<td align="right">0.0059</td>
+<td align="right">-0.0284</td>
+<td align="right">0.0060</td>
 <td align="left">***</td>
 </tr>
 <tr class="odd">
 <td align="left">adj. R-squared</td>
-<td align="right">0.7516</td>
+<td align="right">0.7509</td>
 <td align="right">NA</td>
 <td align="left">NA</td>
-<td align="right">0.7282</td>
+<td align="right">0.7274</td>
 <td align="right">NA</td>
 <td align="left">NA</td>
 </tr>
 <tr class="even">
 <td align="left">Observations</td>
-<td align="right">304860.0000</td>
+<td align="right">294709.0000</td>
 <td align="right">NA</td>
 <td align="left">NA</td>
-<td align="right">196209.0000</td>
+<td align="right">189784.0000</td>
 <td align="right">NA</td>
 <td align="left">NA</td>
 </tr>
