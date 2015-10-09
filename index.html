@@ -122,8 +122,8 @@ This is the third handout I produced for Mo. It contains:
 -->
 <div id="tables-figures" class="section level2">
 <h2>tables &amp; figures</h2>
-<p><div id="htmlwidget-5989" style="width:930px;height:250px;" class="DiagrammeR"></div>
-<script type="application/json" data-for="htmlwidget-5989">{"x":{"diagram":"gantt\n  dateFormat  YYYY-MM\n  title Timeline of the mergers\n  section Quarters\n  Period of study  :done, des1, 2011-03,2013-02\n  Coltel's merger  :crit, des3, 2012-04\n  Pos1/pre2 :active, des2, 2012-04,2013-02\n  Tlemex's merger  :crit, des3, 2012-06\n  Pos2 :active,  des2, 2012-06,2013-02"},"evals":[]}</script></p>
+<p><div id="htmlwidget-1645" style="width:930px;height:260px;" class="DiagrammeR"></div>
+<script type="application/json" data-for="htmlwidget-1645">{"x":{"diagram":"gantt\n  dateFormat  YYYY-MM\n  title Timeline of the mergers\n  section Quarters\n  Decree 2917 :crit, des3, 2011-09\n  Law 1450: crit, des3, 2012-09\n  Law 1430: rit, des3, 2013-01\n  Period of study  :done, des1, 2011-03,2013-02\n  Coltel's merger  :crit, des3, 2012-04\n  Pos1 :active, des2, 2012-04,2013-02\n  Tlemex's merger  :crit, des3, 2012-06\n  Pos2 :active,  des2, 2012-06,2013-02"},"evals":[]}</script></p>
 <table>
 <caption>Mean download speed</caption>
 <thead>
@@ -320,92 +320,6 @@ lb95 and ub95 are the 95% CI upper and lower bounds for the difference. </sub></
 <div id="download-speed" class="section level3">
 <h3>Download speed</h3>
 <p><span class="math display">\[
-speed_{ijct} = \mu + \delta_{s,t} + \alpha_j + \gamma is\_merged_{jt} + \phi faces\_merged_{jt} + \varepsilon_{ijct}
-\]</span></p>
-<table>
-<caption>Effect of competing with a merged firm</caption>
-<thead>
-<tr class="header">
-<th align="left"></th>
-<th align="right">Model 1</th>
-<th align="right">SE 1</th>
-<th align="left">S1</th>
-<th align="right">Model 2</th>
-<th align="right">SE 2</th>
-<th align="left">S2</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">(Intercept)</td>
-<td align="right">3231.16</td>
-<td align="right">1087.95</td>
-<td align="left">**</td>
-<td align="right">1429.02</td>
-<td align="right">1278.03</td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left">firmCOLOMBIA TELECOMUNICACIONES S.A. ESP</td>
-<td align="right">-2278.16</td>
-<td align="right">393.27</td>
-<td align="left">***</td>
-<td align="right">-476.02</td>
-<td align="right">607.56</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left">firmTELMEX COLOMBIA S.A.</td>
-<td align="right">-555.88</td>
-<td align="right">394.84</td>
-<td align="left"></td>
-<td align="right">1265.39</td>
-<td align="right">607.02</td>
-<td align="left">*</td>
-</tr>
-<tr class="even">
-<td align="left">is.mergedTRUE</td>
-<td align="right">608.05</td>
-<td align="right">48.58</td>
-<td align="left">***</td>
-<td align="right">720.79</td>
-<td align="right">72.27</td>
-<td align="left">***</td>
-</tr>
-<tr class="odd">
-<td align="left">faces.mergedTRUE</td>
-<td align="right">915.60</td>
-<td align="right">41.25</td>
-<td align="left">***</td>
-<td align="right">1004.25</td>
-<td align="right">63.94</td>
-<td align="left">***</td>
-</tr>
-<tr class="even">
-<td align="left">adj. R-squared</td>
-<td align="right">0.23</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="right">0.22</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-</tr>
-<tr class="odd">
-<td align="left">Observations</td>
-<td align="right">40575.00</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-<td align="right">21917.00</td>
-<td align="right">NA</td>
-<td align="left">NA</td>
-</tr>
-</tbody>
-</table>
-<p><sub> Dependent Variable: Advertised download speed(Mb/s)<br />
- Model 1: state and firm-quarter FE<br />
- Model 2: same as 1 but drops plans affected by the confounding policies.<br />
- Signif. codes: 0(***) 0.001(**) 0.01(*) 0.05(.) </sub></p>
-<p><span class="math display">\[
 speed_{ijct} = \mu + \delta_{s,t} + \alpha_j + \gamma_1 coltel\_merged_{jt} + \gamma_2 telmex\_merged_{jt} + 
 \phi_1 coltel\_merged\_in\_city_{ct} + \\ 
 \phi_2 coltel\_merged\_in\_city_{ct} + 
@@ -517,7 +431,7 @@ speed_{ijct} = \mu + \delta_{s,t} + \alpha_j + \gamma_1 coltel\_merged_{jt} + \g
 </tr>
 </tbody>
 </table>
-<p><sub> Dependent Variable: Advertised download speed(Mb/s)<br />
+<p><sub> Dependent Variable: Advertised download speed(Mbps)<br />
  Dependent Variable: Advertised download speed<br />
  Model 1: state and firm-quarter FE<br />
  Model 2: same as 1 but drops plans affected by the confounding policies.<br />
@@ -525,6 +439,12 @@ speed_{ijct} = \mu + \delta_{s,t} + \alpha_j + \gamma_1 coltel\_merged_{jt} + \g
 </div>
 <div id="prices" class="section level3">
 <h3>Prices</h3>
+<p><span class="math display">\[
+\ln price_{ijct} = \mu + \delta_{s,t} + \alpha_j + \gamma_2 telmex\_merged_{jt} + 
+\phi_1 coltel\_merged\_in\_city_{ct} + \\ 
+\phi_2 coltel\_merged\_in\_city_{ct} + 
+\phi_3 both\_merged\_in\_city_{ct} + \varepsilon_{ijct}
+\]</span></p>
 <table>
 <caption>Effect of Telmex’s merger on price per Mb</caption>
 <thead>
@@ -622,7 +542,7 @@ speed_{ijct} = \mu + \delta_{s,t} + \alpha_j + \gamma_1 coltel\_merged_{jt} + \g
 </tr>
 </tbody>
 </table>
-<p><sub> Dependent Variable: Natural logarithm of price.<br />
+<p><sub> Dependent Variable: Natural logarithm of dollars per Mbps.<br />
  Model 1: state and firm-quarter FE<br />
  Model 2: same as 1 but drops plans affected by the confounding policies.<br />
  Signif. codes: 0(***) 0.001(**) 0.01(*) 0.05(.) </sub></p>
