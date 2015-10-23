@@ -1,0 +1,8 @@
+---
+title: "Good Stuff"
+output:
+  html_document:
+    theme: flatly
+---
+[Happy people](happy_people.html)
+

@@ -1,0 +1,10 @@
+---
+title: 'Happy people: A year in the taiga.'
+output:
+  html_document:
+    theme: flatly
+---
+> "Now out on their own the trappers become what they essentially are: happy people. Accompanied only by their dogs, they live off the land. They are completely self reliant. They are truly free. No rules, no taxes, no government, no laws, no bureaucracy. No phones, no radio. Equipped only with their individual values and standard of conduct"
+
+[Documentary](http://www.netflix.com/search/happy%20people)  
+[Soundtrack](http://scorerevolution.com/scores/e8457d8c2f67376929c89a5efe26b418/happy-people-a-year-in-the-taiga)

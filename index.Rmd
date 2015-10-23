@@ -1,0 +1,11 @@
+---
+title: "Sebas' stuff"
+output:
+  html_document:
+    theme: flatly
+---
+
+- [Research](merger_manuscript.html) ([Slides](ioslidestry.html))
+   
+- [Non-research](non_research.html)
+
