@@ -1,0 +1,8 @@
+---
+title: "Research stuff"
+output: html_document
+---
+
+
+- [mergers with complements](merger_manuscript.html) ([Slides](slides.html))  
+- [price discrimination]()
