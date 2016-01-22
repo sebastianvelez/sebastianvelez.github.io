@@ -5,7 +5,7 @@ output:
     theme: flatly
 ---
 
-- [Research](merger_manuscript.html) ([Slides](ioslidestry.html))
+- [Research](merger_manuscript.html) ([Slides](slides.html))
    
 - [Non-research](non_research.html)
 
