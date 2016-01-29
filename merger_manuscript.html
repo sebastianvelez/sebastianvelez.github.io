@@ -195,7 +195,7 @@ y_{fct} = \mu + \phi_1 COLTEL_f + \phi_2 TELMEX_f + \phi_3 AFTER_t +
 <p><span class="math">\[q_j(x_i,\omega_h,\mathbf{\iota_i}, \tau_{it};\mathbf{\Theta}) = \frac{exp \left[ \sum_{h \in j} (x_i\beta_h + \delta_h - \alpha p_h + \iota_{ih} + \tau_{it}) + \sum_{r \in j} \Gamma_r  + \iota_{ih} + \tau_{it}\right]}{1+\sum_{j = 1}^{32} exp\left[  \sum_{h \in j} (x_i\beta_h + \delta_h - \alpha p_h + \iota_{ih} + \tau_{it}) + \sum_{r \in j} \Gamma_r  + \iota_{ih} + \tau_{it}\right]} \]</span></p>
 <p>Since the choice of bundles is observed over different markets, different firms and over time, the likelihood of observing the data will be:</p>
 <p><span class="math">\[
-\mathfrak{L}(x_i,\omega_h,\mathbf{\iota_i};\mathbf{\Theta}) = \displaystyle \prod_{j=0}^{31}}\displaystyle \prod_{t=1}^{12}\displaystyle \prod_{c=1}^{46}\left[ \gamma q_{jct}(\hat{\tau}) + (1-\gamma)q_{jct}(0) \right]
+\mathfrak{L}(x_i,\omega_h,\mathbf{\iota_i};\mathbf{\Theta}) = \displaystyle \prod_{j=0}^{31}\displaystyle \prod_{t=1}^{12}\displaystyle \prod_{c=1}^{46}\left[ \gamma q_{jct}(\hat{\tau}) + (1-\gamma)q_{jct}(0) \right]
 \]</span></p>
 <div id="estimation" class="section level4">
 <h4><span class="header-section-number">4.1.2.1</span> Estimation</h4>
