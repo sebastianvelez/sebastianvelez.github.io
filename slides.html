@@ -10,7 +10,7 @@
 
 
 
-  <meta name="date" content="2016-05-02" />
+  <meta name="date" content="2016-05-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -90,7 +90,7 @@
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">May 02, 2016</p>
+            <p style="margin-top: 6px; margin-left: -2px;">May 17, 2016</p>
           </hgroup>
   </slide>
 
@@ -109,29 +109,33 @@ MathJax.Hub.Config({
 <slide class=''><hgroup><h2>Overview</h2></hgroup><article  id="overview">
 
 <ul class = 'build'>
-<li>I evaluate the effects of the merger Telmex-Comcel (now Claro)
+<li>Assess the effects of the merger Telmex-Comcel (now Claro).
 
 <ul>
-<li>I focus on how the merger affected the download speeds and prices of hardwired internet.</li>
-<li>I find that the merger increased speeds without increasing prices.
-
-<ul>
-<li>Both the merging firms and their competitors increased speeds.</li>
+<li>Focus on effects on speeds and prices of hardwired internet.</li>
 </ul></li>
-</ul></li>
-<li>I provide an explanation for the increase in speeds.
+<li>Provide an explanation for the increase in speeds.
 
 <ul>
-<li>Suply side: the merger gave the ISP access to new key inputs like pre-existent networks and knowledge.</li>
-<li>Demand side: The goods produced by the merging firms are complementary goods for consumers.</li>
+<li>Supply side: economies of scope, cost sinergies.</li>
+<li>Demand side: goods are complements.</li>
+</ul></li>
+</ul>
+
+<ul class = 'build'>
+<li>The merger had competitive effects
+
+<ul>
+<li>Speeds increased, prices did not.</li>
+<li>Complementarities are the best explanation.</li>
 </ul></li>
 </ul>
 
 </article></slide><slide class='segue dark nobackground'><hgroup class = 'auto-fadein'><h2>Background</h2></hgroup><article  id="background">
 
-</article></slide><slide class=''><hgroup><h2>The merger that didn&#39;t happened</h2></hgroup><article  id="the-merger-that-didnt-happened">
+</article></slide><slide class=''><hgroup><h2>The merger that didn&#39;t happen</h2></hgroup><article  id="the-merger-that-didnt-happen">
 
-<p>In 2012, the largest ISP and cellphone carrier merged.</p>
+<p>The merger on the news&#8230;</p>
 
 <center>
 
@@ -140,10 +144,6 @@ MathJax.Hub.Config({
 </center>
 
 <p><br></p>
-
-<ul>
-<li>At the end of the Summer no one doubted a merger had occurred.</li>
-</ul>
 
 <aside class='note'><section><ul>
 <li>At the end of 2011 two telecom giants in Colombia seemed to cozy with one another.</li>
@@ -158,7 +158,7 @@ MathJax.Hub.Config({
 <ul>
 <li>93% of cities and towns</li>
 <li>almost 70% market share</li>
-<li>almost 80% of handsets sold</li>
+<li>almost 70% of handsets sold</li>
 </ul>
 
 <p>Telmex was the largest triple-play provider (land-line phone, Cable TV and Internet):</p>
@@ -181,7 +181,7 @@ MathJax.Hub.Config({
 </article></slide><slide class=''><hgroup><h2>The effect of the merger: more details</h2></hgroup><article  id="the-effect-of-the-merger-more-details">
 
 <ul>
-<li><p>In equilibrium the effects of the merger have to manifest themselves beyond the merging firms.</p></li>
+<li><p>In equilibrium the effects should extend beyond the merging firms.</p></li>
 <li>I assess three types of effects:
 
 <ul>
@@ -189,14 +189,13 @@ MathJax.Hub.Config({
 <li>effect on their competitors, and</li>
 <li>average effect on markets.</li>
 </ul></li>
-</ul>
-
-<p>To do so I use Differences-in-differences. I compare the download speeds of:</p>
+<li><p>I compare the download speeds of:</p>
 
 <ul class = 'build'>
-<li>firms competing with the merging firms and similar firms that didn&#39;t compete with it.</li>
+<li>the merging ISP and its largest competitors</li>
+<li>merging firm&#39;s competitors and other similar firms.</li>
 <li>markets affected by the merger and markets not affected by it.</li>
-<li>the merging ISP and its largest competitors.</li>
+</ul></li>
 </ul>
 
 </article></slide><slide class=''><hgroup><h2>The diff-in-diff design</h2></hgroup><article  id="the-diff-in-diff-design">
@@ -204,21 +203,443 @@ MathJax.Hub.Config({
 <p>I estimate the following:</p>
 
 <p>\[
+y_{fct} = \phi_0 + \phi_1 TELMEX_f + \phi_2 AFTER_t +\\
+\phi_3 TELMEX_f \times AFTER_t +\\
+\delta_{st} + \phi_f + \varepsilon_{fct}
+\]</p>
+
+<p>\[
 y_{fct} = \gamma_0 + \gamma_1 FACES\_MERGER_f + \gamma_2 AFTER_t +\\
 \gamma_3 FACES\_MERGER_f \times AFTER_t +\\
 \delta_{st} + \gamma_f + \varepsilon_{fct}
-\] <br> \[
+\]</p>
+
+<p>\[
 y_{ct} = \alpha_0 + \alpha_1 AFTER_t + \alpha_2 MERGER_c +\\
 \alpha_3 AFTER_t \times MERGER_c + \varepsilon_{ct} 
 \]</p>
 
 <p><br></p>
 
-<p>\[
-y_{fct} = \phi_0 + \phi_1 TELMEX_f + \phi_2 AFTER_t +\\
-\phi_3 TELMEX_f \times AFTER_t +\\
-\delta_{st} + \phi_f + \varepsilon_{fct}
-\]</p>
+</article></slide><slide class=''><hgroup><h2>Results: merged firm&#39;s speed</h2></hgroup><article  id="results-merged-firms-speed" class="smaller">
+
+<center>
+
+<table class="gmisc_table" style="border-collapse: collapse;">
+
+<thead>
+
+<tr>
+
+<td colspan="8" style="text-align: left;">
+
+<center>
+
+Effect of mergers on median speed
+
+</center>
+
+</td>
+
+</tr>
+
+<tr>
+
+<th style="border-top: 2px solid grey;">
+
+</th>
+
+<th colspan="3" style="font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;">
+
+Model 1
+
+</th>
+
+<th style="border-top: 2px solid grey;; border-bottom: hidden;">
+
+ 
+
+</th>
+
+<th colspan="3" style="font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;">
+
+Model 2
+
+</th>
+
+</tr>
+
+<tr>
+
+<th style="border-bottom: 1px solid grey;">
+
+</th>
+
+<th style="border-bottom: 1px solid grey; text-align: center;">
+
+Estimate
+
+</th>
+
+<th style="border-bottom: 1px solid grey; text-align: center;">
+
+Std. Error
+
+</th>
+
+<th style="border-bottom: 1px solid grey; text-align: center;">
+
+</th>
+
+<th style="border-bottom: 1px solid grey;" colspan="1">
+
+ 
+
+</th>
+
+<th style="border-bottom: 1px solid grey; text-align: center;">
+
+Estimate
+
+</th>
+
+<th style="border-bottom: 1px solid grey; text-align: center;">
+
+Std. Error
+
+</th>
+
+<th style="border-bottom: 1px solid grey; text-align: center;">
+
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr style="background-color: #ffffff;">
+
+<td style="background-color: #ffffff; text-align: left;">
+
+Intercept
+
+</td>
+
+<td style="background-color: #ffffff; text-align: right;">
+
+0.73
+
+</td>
+
+<td style="background-color: #ffffff; text-align: right;">
+
+0.17
+
+</td>
+
+<td style="background-color: #ffffff; text-align: left;">
+
+***
+
+</td>
+
+<td style="background-color: #ffffff;" colspan="1">
+
+ 
+
+</td>
+
+<td style="background-color: #ffffff; text-align: right;">
+
+0.59
+
+</td>
+
+<td style="background-color: #ffffff; text-align: right;">
+
+0.20
+
+</td>
+
+<td style="background-color: #ffffff; text-align: left;">
+
+**
+
+</td>
+
+</tr>
+
+<tr style="background-color: #ffffff;">
+
+<td style="background-color: #ffffff; text-align: left;">
+
+Post
+
+</td>
+
+<td style="background-color: #ffffff; text-align: right;">
+
+1.31
+
+</td>
+
+<td style="background-color: #ffffff; text-align: right;">
+
+0.15
+
+</td>
+
+<td style="background-color: #ffffff; text-align: left;">
+
+***
+
+</td>
+
+<td style="background-color: #ffffff;" colspan="1">
+
+ 
+
+</td>
+
+<td style="background-color: #ffffff; text-align: right;">
+
+1.73
+
+</td>
+
+<td style="background-color: #ffffff; text-align: right;">
+
+0.26
+
+</td>
+
+<td style="background-color: #ffffff; text-align: left;">
+
+***
+
+</td>
+
+</tr>
+
+<tr style="background-color: #ffffff;">
+
+<td style="background-color: #ffffff; text-align: left;">
+
+Telmex
+
+</td>
+
+<td style="background-color: #ffffff; text-align: right;">
+
+1.41
+
+</td>
+
+<td style="background-color: #ffffff; text-align: right;">
+
+0.19
+
+</td>
+
+<td style="background-color: #ffffff; text-align: left;">
+
+***
+
+</td>
+
+<td style="background-color: #ffffff;" colspan="1">
+
+ 
+
+</td>
+
+<td style="background-color: #ffffff; text-align: right;">
+
+1.53
+
+</td>
+
+<td style="background-color: #ffffff; text-align: right;">
+
+0.22
+
+</td>
+
+<td style="background-color: #ffffff; text-align: left;">
+
+***
+
+</td>
+
+</tr>
+
+<tr style="background-color: #c6e3eb;">
+
+<td style="background-color: #c6e3eb; text-align: left;">
+
+Telmex/post
+
+</td>
+
+<td style="background-color: #c6e3eb; text-align: right;">
+
+1.29
+
+</td>
+
+<td style="background-color: #c6e3eb; text-align: right;">
+
+0.15
+
+</td>
+
+<td style="background-color: #c6e3eb; text-align: left;">
+
+***
+
+</td>
+
+<td style="background-color: #c6e3eb;" colspan="1">
+
+ 
+
+</td>
+
+<td style="background-color: #c6e3eb; text-align: right;">
+
+1.25
+
+</td>
+
+<td style="background-color: #c6e3eb; text-align: right;">
+
+0.26
+
+</td>
+
+<td style="background-color: #c6e3eb; text-align: left;">
+
+***
+
+</td>
+
+</tr>
+
+<tr style="background-color: #ffffff;">
+
+<td style="background-color: #ffffff; text-align: left;">
+
+adj. R-squared
+
+</td>
+
+<td style="background-color: #ffffff; text-align: right;">
+
+0.59
+
+</td>
+
+<td style="background-color: #ffffff; text-align: right;">
+
+</td>
+
+<td style="background-color: #ffffff; text-align: left;">
+
+</td>
+
+<td style="background-color: #ffffff;" colspan="1">
+
+ 
+
+</td>
+
+<td style="background-color: #ffffff; text-align: right;">
+
+0.55
+
+</td>
+
+<td style="background-color: #ffffff; text-align: right;">
+
+</td>
+
+<td style="background-color: #ffffff; text-align: left;">
+
+</td>
+
+</tr>
+
+<tr style="background-color: #ffffff;">
+
+<td style="background-color: #ffffff; border-bottom: 2px solid grey; text-align: left;">
+
+Observations
+
+</td>
+
+<td style="background-color: #ffffff; border-bottom: 2px solid grey; text-align: right;">
+
+7,891
+
+</td>
+
+<td style="background-color: #ffffff; border-bottom: 2px solid grey; text-align: right;">
+
+</td>
+
+<td style="background-color: #ffffff; border-bottom: 2px solid grey; text-align: left;">
+
+</td>
+
+<td style="background-color: #ffffff; border-bottom: 2px solid grey;" colspan="1">
+
+ 
+
+</td>
+
+<td style="background-color: #ffffff; border-bottom: 2px solid grey; text-align: right;">
+
+7,029
+
+</td>
+
+<td style="background-color: #ffffff; border-bottom: 2px solid grey; text-align: right;">
+
+</td>
+
+<td style="background-color: #ffffff; border-bottom: 2px solid grey; text-align: left;">
+
+</td>
+
+</tr>
+
+</tbody>
+
+<tfoot>
+
+<tr>
+
+<td colspan="8">
+
+<sub>Dependent Variable: Median download speed(Mbps).<br> Model 1: state and firm-quarter FE.<br/> Model 2: same as 1 but drops plans affected by the confounding policies.<br/> Signif. codes: 0(***) 0.001(**) 0.01(*) 0.05(.).<br/> Standard errors clusetered at firm-city-quarter level. </sub>
+
+</td>
+
+</tr>
+
+</tfoot>
+
+</table>
+
+</center>
+
+<p><br></p>
+
+<ul>
+<li>The merged ISP increased download speeds by about 1.2 Mbps.</li>
+</ul>
 
 </article></slide><slide class=''><hgroup><h2>Effect on rivals&#39; speed</h2></hgroup><article  id="effect-on-rivals-speed" class="smaller">
 
@@ -340,8 +761,6 @@ Intercept
 
 <td style="background-color: #ffffff; text-align: left;">
 
-***
-
 </td>
 
 <td style="background-color: #ffffff;" colspan="1">
@@ -363,8 +782,6 @@ Intercept
 </td>
 
 <td style="background-color: #ffffff; text-align: left;">
-
-***
 
 </td>
 
@@ -620,7 +1037,7 @@ Observations
 
 <td style="background-color: #ffffff; border-bottom: 2px solid grey; text-align: right;">
 
-27,536
+4,536
 
 </td>
 
@@ -640,7 +1057,7 @@ Observations
 
 <td style="background-color: #ffffff; border-bottom: 2px solid grey; text-align: right;">
 
-27,536
+4,131
 
 </td>
 
@@ -674,7 +1091,11 @@ Observations
 
 </center>
 
-<p><br> - Firms competing with the merged increased speeds by about .5 Mbps when compared to similar firms in cities where the merger didn&#39;t occur.</p>
+<p><br></p>
+
+<ul>
+<li>Competitors increased speeds by about .5 Mbps.</li>
+</ul>
 
 </article></slide><slide class=''><hgroup><h2>Results: cities&#39; speed</h2></hgroup><article  id="results-cities-speed" class="smaller">
 
@@ -1126,563 +1547,56 @@ Observations
 
 </center>
 
-<p><br> - Download speeds in cities where the merger took place increased by 0.6 Mbps. relative to cities that didn&#39;t experience it.</p>
-
-</article></slide><slide class=''><hgroup><h2>Results: merged firm&#39;s speed</h2></hgroup><article  id="results-merged-firms-speed" class="smaller">
-
-<center>
-
-<table class="gmisc_table" style="border-collapse: collapse;">
-
-<thead>
-
-<tr>
-
-<td colspan="8" style="text-align: left;">
-
-<center>
-
-Effect of mergers on median speed
-
-</center>
-
-</td>
-
-</tr>
-
-<tr>
-
-<th style="border-top: 2px solid grey;">
-
-</th>
-
-<th colspan="3" style="font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;">
-
-Model 1
-
-</th>
-
-<th style="border-top: 2px solid grey;; border-bottom: hidden;">
-
- 
-
-</th>
-
-<th colspan="3" style="font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;">
-
-Model 2
-
-</th>
-
-</tr>
-
-<tr>
-
-<th style="border-bottom: 1px solid grey;">
-
-</th>
-
-<th style="border-bottom: 1px solid grey; text-align: center;">
-
-Estimate
-
-</th>
-
-<th style="border-bottom: 1px solid grey; text-align: center;">
-
-Std. Error
-
-</th>
-
-<th style="border-bottom: 1px solid grey; text-align: center;">
-
-</th>
-
-<th style="border-bottom: 1px solid grey;" colspan="1">
-
- 
-
-</th>
-
-<th style="border-bottom: 1px solid grey; text-align: center;">
-
-Estimate
-
-</th>
-
-<th style="border-bottom: 1px solid grey; text-align: center;">
-
-Std. Error
-
-</th>
-
-<th style="border-bottom: 1px solid grey; text-align: center;">
-
-</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr style="background-color: #ffffff;">
-
-<td style="background-color: #ffffff; text-align: left;">
-
-Intercept
-
-</td>
-
-<td style="background-color: #ffffff; text-align: right;">
-
-0.73
-
-</td>
-
-<td style="background-color: #ffffff; text-align: right;">
-
-0.17
-
-</td>
-
-<td style="background-color: #ffffff; text-align: left;">
-
-***
-
-</td>
-
-<td style="background-color: #ffffff;" colspan="1">
-
- 
-
-</td>
-
-<td style="background-color: #ffffff; text-align: right;">
-
-0.59
-
-</td>
-
-<td style="background-color: #ffffff; text-align: right;">
-
-0.2
-
-</td>
-
-<td style="background-color: #ffffff; text-align: left;">
-
-**
-
-</td>
-
-</tr>
-
-<tr style="background-color: #ffffff;">
-
-<td style="background-color: #ffffff; text-align: left;">
-
-Coltel
-
-</td>
-
-<td style="background-color: #ffffff; text-align: right;">
-
-0.02
-
-</td>
-
-<td style="background-color: #ffffff; text-align: right;">
-
-0.17
-
-</td>
-
-<td style="background-color: #ffffff; text-align: left;">
-
-</td>
-
-<td style="background-color: #ffffff;" colspan="1">
-
- 
-
-</td>
-
-<td style="background-color: #ffffff; text-align: right;">
-
-0.16
-
-</td>
-
-<td style="background-color: #ffffff; text-align: right;">
-
-0.2
-
-</td>
-
-<td style="background-color: #ffffff; text-align: left;">
-
-</td>
-
-</tr>
-
-<tr style="background-color: #ffffff;">
-
-<td style="background-color: #ffffff; text-align: left;">
-
-Post
-
-</td>
-
-<td style="background-color: #ffffff; text-align: right;">
-
-1.31
-
-</td>
-
-<td style="background-color: #ffffff; text-align: right;">
-
-0.15
-
-</td>
-
-<td style="background-color: #ffffff; text-align: left;">
-
-***
-
-</td>
-
-<td style="background-color: #ffffff;" colspan="1">
-
- 
-
-</td>
-
-<td style="background-color: #ffffff; text-align: right;">
-
-1.73
-
-</td>
-
-<td style="background-color: #ffffff; text-align: right;">
-
-0.26
-
-</td>
-
-<td style="background-color: #ffffff; text-align: left;">
-
-***
-
-</td>
-
-</tr>
-
-<tr style="background-color: #ffffff;">
-
-<td style="background-color: #ffffff; text-align: left;">
-
-Telmex
-
-</td>
-
-<td style="background-color: #ffffff; text-align: right;">
-
-1.41
-
-</td>
-
-<td style="background-color: #ffffff; text-align: right;">
-
-0.19
-
-</td>
-
-<td style="background-color: #ffffff; text-align: left;">
-
-***
-
-</td>
-
-<td style="background-color: #ffffff;" colspan="1">
-
- 
-
-</td>
-
-<td style="background-color: #ffffff; text-align: right;">
-
-1.53
-
-</td>
-
-<td style="background-color: #ffffff; text-align: right;">
-
-0.22
-
-</td>
-
-<td style="background-color: #ffffff; text-align: left;">
-
-***
-
-</td>
-
-</tr>
-
-<tr style="background-color: #ffffff;">
-
-<td style="background-color: #ffffff; text-align: left;">
-
-Coltel/Post
-
-</td>
-
-<td style="background-color: #ffffff; text-align: right;">
-
--0.32
-
-</td>
-
-<td style="background-color: #ffffff; text-align: right;">
-
-0.17
-
-</td>
-
-<td style="background-color: #ffffff; text-align: left;">
-
-</td>
-
-<td style="background-color: #ffffff;" colspan="1">
-
- 
-
-</td>
-
-<td style="background-color: #ffffff; text-align: right;">
-
--0.51
-
-</td>
-
-<td style="background-color: #ffffff; text-align: right;">
-
-0.2
-
-</td>
-
-<td style="background-color: #ffffff; text-align: left;">
-
-**
-
-</td>
-
-</tr>
-
-<tr style="background-color: #c6e3eb;">
-
-<td style="background-color: #c6e3eb; text-align: left;">
-
-Telmex/post
-
-</td>
-
-<td style="background-color: #c6e3eb; text-align: right;">
-
-1.29
-
-</td>
-
-<td style="background-color: #c6e3eb; text-align: right;">
-
-0.15
-
-</td>
-
-<td style="background-color: #c6e3eb; text-align: left;">
-
-***
-
-</td>
-
-<td style="background-color: #c6e3eb;" colspan="1">
-
- 
-
-</td>
-
-<td style="background-color: #c6e3eb; text-align: right;">
-
-1.25
-
-</td>
-
-<td style="background-color: #c6e3eb; text-align: right;">
-
-0.26
-
-</td>
-
-<td style="background-color: #c6e3eb; text-align: left;">
-
-***
-
-</td>
-
-</tr>
-
-<tr style="background-color: #ffffff;">
-
-<td style="background-color: #ffffff; text-align: left;">
-
-adj. R-squared
-
-</td>
-
-<td style="background-color: #ffffff; text-align: right;">
-
-0.59
-
-</td>
-
-<td style="background-color: #ffffff; text-align: right;">
-
-</td>
-
-<td style="background-color: #ffffff; text-align: left;">
-
-</td>
-
-<td style="background-color: #ffffff;" colspan="1">
-
- 
-
-</td>
-
-<td style="background-color: #ffffff; text-align: right;">
-
-0.55
-
-</td>
-
-<td style="background-color: #ffffff; text-align: right;">
-
-</td>
-
-<td style="background-color: #ffffff; text-align: left;">
-
-</td>
-
-</tr>
-
-<tr style="background-color: #ffffff;">
-
-<td style="background-color: #ffffff; border-bottom: 2px solid grey; text-align: left;">
-
-Observations
-
-</td>
-
-<td style="background-color: #ffffff; border-bottom: 2px solid grey; text-align: right;">
-
-7,891
-
-</td>
-
-<td style="background-color: #ffffff; border-bottom: 2px solid grey; text-align: right;">
-
-</td>
-
-<td style="background-color: #ffffff; border-bottom: 2px solid grey; text-align: left;">
-
-</td>
-
-<td style="background-color: #ffffff; border-bottom: 2px solid grey;" colspan="1">
-
- 
-
-</td>
-
-<td style="background-color: #ffffff; border-bottom: 2px solid grey; text-align: right;">
-
-7,029
-
-</td>
-
-<td style="background-color: #ffffff; border-bottom: 2px solid grey; text-align: right;">
-
-</td>
-
-<td style="background-color: #ffffff; border-bottom: 2px solid grey; text-align: left;">
-
-</td>
-
-</tr>
-
-</tbody>
-
-<tfoot>
-
-<tr>
-
-<td colspan="8">
-
-<sub>Dependent Variable: Median download speed(Mbps).<br> Model 1: state and firm-quarter FE.<br/> Model 2: same as 1 but drops plans affected by the confounding policies.<br/> Signif. codes: 0(***) 0.001(**) 0.01(*) 0.05(.).<br/> Standard errors clusetered at firm-city-quarter level. </sub>
-
-</td>
-
-</tr>
-
-</tfoot>
-
-</table>
-
-</center>
-
 <p><br></p>
 
 <ul>
-<li>The ISP involved in the merger increased download speeds by about 1.2 Mbps.</li>
+<li>In cities where the merger took place speeds increased by 0.6 Mbps.</li>
 </ul>
 
 </article></slide><slide class=''><hgroup><h2>Summary of the effects</h2></hgroup><article  id="summary-of-the-effects">
 
 <ul>
 <li>The merged increased speeds (by at least 1.2 Mbps).</li>
-<li>Rivals increased medan speeds (.5 Mbps) but reduced their maxima.</li>
+<li>Rivals increased median speeds (.5 Mbps) but reduced their maxima.</li>
 <li>Median speed in cities were the merger happened increased (.6 Mbps).</li>
+<li><p>Results robust:</p>
+
+<ul>
+<li>falsification test</li>
+<li>by strata</li>
+<li>propensity score</li>
+</ul></li>
 </ul>
 
 </article></slide><slide class='segue dark nobackground'><hgroup class = 'auto-fadein'><h2>Why would speeds increase?</h2></hgroup><article  id="why-would-speeds-increase">
 
-</article></slide><slide class=''><hgroup><h2>Some reasons why speed would increase after the merger</h2></hgroup><article  id="some-reasons-why-speed-would-increase-after-the-merger">
+</article></slide><slide class=''><hgroup><h2>Two kinds of reasons</h2></hgroup><article  id="two-kinds-of-reasons">
 
 <ul>
 <li>Supply side: the ISP reduces costs after the merger
 
 <ul>
-<li>access to pre-existing networks owned by the mobile firm</li>
+<li>access to pre-existing mobile networks</li>
 <li>know-how from the mobile firm</li>
-<li>Acquisition of new assets</li>
+<li>acquisition of new assets</li>
 </ul></li>
 <li>Demand side: the goods sold by the merging parties are complements.
 
 <ul>
-<li>Consumer that demand hardwired products are more likely to demand mobile services.</li>
-<li>The marginal revenue of increasing speed after the merger is higher (internalized profits).</li>
+<li>Consumers demanding broadband are more likely to demand mobile services.</li>
+<li>The merger internalizes profits.</li>
 </ul></li>
 </ul>
 
 </article></slide><slide class=''><hgroup><h2>Cost reductions are not it!</h2></hgroup><article  id="cost-reductions-are-not-it">
 
 <ul>
-<li>I don&#39;t have the data to dismiss cost-related explanations. However,
+<li>No good data to prove it. However,
 
 <ul>
-<li>The increase in speeds is abrupt and widespread.</li>
-<li>The engineering craft, although related is not transferable.</li>
-<li>Mobile networks are naturally congested and not of much use for hardwired internet (<span class="cite">Calabrese (2013)</span>)</li>
+<li>increase in speeds is abrupt and widespread,</li>
+<li>engineering craft, although related is not transferable, and</li>
+<li>mobile networks are naturally congested (<span class="cite">Calabrese (2013)</span>)</li>
 </ul></li>
 </ul>
 
@@ -1700,13 +1614,15 @@ Flores-Fillol</span> and <span>
 Moner-Colonques</span> (2011)</span></li>
 </ul>
 
+<p>Takeaway: Mergers of complents have potential for competitive effects</p>
+
 </article></slide><slide class=''><hgroup><h2>Utility and substitution patterns</h2></hgroup><article  id="utility-and-substitution-patterns">
 
 <p>Following <span class="cite">Gentzkow (2007)</span></p>
 
 <ul>
 <li>Suppose two goods A and B.</li>
-<li>Defining \(\Gamma = (u&#39;_{AB}-u&#39;_B)-(u&#39;_A-u&#39;_0)\), the utility of cosuming the individual goods and a bundle can be written as</li>
+<li>Defining \(\Gamma = (u&#39;_{AB}-u&#39;_B)-(u&#39;_A-u&#39;_0)\), the utility of consuming the individual goods and a bundle can be written as</li>
 </ul>
 
 <p>\[u_A=\delta_A - \alpha p_A + \nu_A\] \[u_B=\delta_B - \alpha p_B + \nu_B\] \[u_{AB}=u_A + u_B + \Gamma\] \[\left[ \begin{matrix}
@@ -1741,8 +1657,8 @@ Moner-Colonques</span> (2011)</span></li>
 <p><br></p>
 
 <ul class = 'build'>
-<li>marginal consumers like \(m\) will substitute \(AB\) for \(A\): \(\uparrow q_A = \downarrow q_{AB}\) and \(Q_A\) remains unchanged.</li>
-<li>marginal consumers like \(n\) have no impact on \(Q_A\)<br/></li>
+<li>\(m\) substitutes \(AB\) for \(A\): \(\uparrow q_A = \downarrow q_{AB}\) and \(Q_A\) remains unchanged.</li>
+<li>\(n\) has no impact on \(Q_A\)<br/></li>
 <li>Hence \(\Gamma = 0\) implies \(\frac{\partial Q_A}{\partial p_B}=0\) (goods are independent)</li>
 </ul>
 
@@ -1757,8 +1673,8 @@ Moner-Colonques</span> (2011)</span></li>
 <p><br></p>
 
 <ul class = 'build'>
-<li>marginal consumers like \(m\) will substitute \(AB\) for \(A\): \(\uparrow q_A = \downarrow q_{AB}\)</li>
-<li>marginal consumers like \(o\) will substitute \(AB\) for neither good: \(\downarrow q_A\) and overall \(\downarrow Q_A\)</li>
+<li>\(m\) substitutes \(AB\) for \(A\): \(\uparrow q_A = \downarrow q_{AB}\)</li>
+<li>\(o\) substitutes \(AB\) for outside option: \(\downarrow q_A\) and overall \(\downarrow Q_A\)</li>
 <li>Hence \(\Gamma &gt; 0\) implies \(\frac{\partial Q_A}{\partial p_B}&lt;0\) (goods are complements)</li>
 </ul>
 
@@ -1781,14 +1697,10 @@ Moner-Colonques</span> (2011)</span></li>
 </article></slide><slide class=''><hgroup><h2>Empirical demand (I)</h2></hgroup><article  id="empirical-demand-i">
 
 <ul>
-<li>There are 4 individual goods indexed by \(h \in \{1,2,3,4\}\).</li>
-<li>With 4 goods there will be \(j \in \{0,1,...,15\}\) possible bundles to choose from
-
-<ul>
-<li>0 is the outside option, 1-4 are individual goods, 5-10 are pairs of goods, 11-14 are bundles of three goods and 15 is the bundle of all goods.</li>
-</ul></li>
-<li><p>Quarters will be indexed by \(t\), cities by \(c\) and consumers by \(i=\{1,2...,N\}\)</p></li>
-<li><p>The utility of cosuming an individual good h is given by</p></li>
+<li>4 individual goods \(h \in \{1,2,3,4\}\)</li>
+<li>16 possible bundles \(j \in \{0,1,...,15\}\)</li>
+<li><p>Quarters are indexed by \(t\), cities by \(c\) and consumers by \(i=\{1,2...,N\}\)</p></li>
+<li><p>The utility of consuming an individual good \(h\) is given by</p></li>
 </ul>
 
 <p>\[\bar{u}_{ihct} = p_{hct} \bar{\alpha}_i + \sum_k x_{hk} \bar{\beta}_{ik} + \xi_{h}\]</p>
@@ -1814,7 +1726,7 @@ Moner-Colonques</span> (2011)</span></li>
 </article></slide><slide class=''><hgroup><h2>Empirical demand (III)</h2></hgroup><article  id="empirical-demand-iii">
 
 <ul>
-<li>Finally, integrating over the εs the probability of an individual choosing a given bundle j, can be written as</li>
+<li>Integrating over the εs the choice probability for bundle j, is</li>
 </ul>
 
 <p>\[s_{jct} =\int_\nu \int_z \frac{\exp \left[\sum_{h \in j} u_{ihct}+ \Gamma_j \right]}{1 + \sum_{m=1}^{15} \left[\exp \sum_{h \in m} u_{ihct}+ \Gamma_m \right] }dF_\nu dF_z \]</p>
@@ -1850,7 +1762,7 @@ Moner-Colonques</span> (2011)</span></li>
 
 <center>
 
-Table 7: Summary bundles 2012
+Table 7: Summary bundles 2015
 
 </center>
 
@@ -2906,27 +2818,27 @@ Internet/Phone
 
 </tr>
 
-<tr style="background-color: #26f0f1;">
+<tr style="background-color: #ffffff;">
 
-<td style="background-color: #26f0f1; text-align: left;">
+<td style="background-color: #ffffff; text-align: left;">
 
 Internet/TV
 
 </td>
 
-<td style="background-color: #26f0f1; text-align: center;">
+<td style="background-color: #ffffff; text-align: center;">
 
 -1.78
 
 </td>
 
-<td style="background-color: #26f0f1; text-align: center;">
+<td style="background-color: #ffffff; text-align: center;">
 
 1.69
 
 </td>
 
-<td style="background-color: #26f0f1; text-align: right;">
+<td style="background-color: #ffffff; text-align: right;">
 
 </td>
 
@@ -3914,23 +3826,29 @@ Internet/Mobile/Phone/TV
 
 </center>
 
-</article></slide><slide class=''><hgroup><h2>Conclusions</h2></hgroup><article  id="conclusions">
+</article></slide><slide class=''><hgroup><h2>Final remarks</h2></hgroup><article  id="final-remarks">
 
 <ul>
 <li>The merger had competitive effects: equilibrium download speeds increased more than prices.</li>
 <li>There is evidence of strong complementary preferences for the goods offered by the merging firms.</li>
-<li>The effect of subsidies to Internet access is likely to be understated if such complementarities are not taken into account.</li>
+</ul>
+
+<p>What now?</p>
+
+<ul>
+<li>Simulate counterfactuals: Bogotá&#39;s governemnt&#39;s decision of selling controlling stake in ETB.</li>
+<li>Re-assses the effect of subsidies to Internet access.</li>
 </ul>
 
 </article></slide><slide class=''><hgroup><h2>Logit (1)</h2></hgroup><article  id="logit-1">
 
-<p>\[ln(s_j)- ls(s_0) = \alpha \sum_{h \in j} price_h +\sum_{h \in j} \sum_k x_{hk} \beta_k + \varepsilon_j\]</p>
+<p>\[ln(s_j)- ln(s_0) = \alpha \sum_{h \in j} price_h +\sum_{h \in j} \sum_k x_{hk} \beta_k + \varepsilon_j\]</p>
 
 <p>Where \(h\) are individual goods included in bundle \(j\) and \(x_{hk}\) are goods features:</p>
 
 <ul>
-<li>number of minutes included (cellphone + landline)</li>
-<li>avg price additional minute (cellphone + landline)</li>
+<li>number of minutes included (cellphone + land-line)</li>
+<li>avg price additional minute (cellphone + land-line)</li>
 <li>download speed (Mbps)</li>
 <li>number of SMS included</li>
 <li>price additional sms</li>
@@ -4314,7 +4232,7 @@ Internet/Mobile/Phone/TV
 
 <center>
 
-<p><a href="javascript:slidedeck.loadSlide(28)">(go back)</a></p>
+<p><a href="javascript:slidedeck.loadSlide(27)">(go back)</a></p>
 
 <div class="references">
 </article></slide><slide class=''><hgroup><h2>References</h2></hgroup><article  id="references" class="unnumbered">
