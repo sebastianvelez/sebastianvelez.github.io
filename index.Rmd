@@ -1,11 +1,31 @@
 ---
-title: "Sebas' stuff"
+title: "<center> Juan Sebastián Vélez </center>"
 output:
   html_document:
     theme: flatly
 ---
+<br>
+<br>
+<br>
+<br>
 
-- [Research](research.html)
-   
-- [Non-research](non_research.html)
+<center>
+
+<img src="https://dl.dropboxusercontent.com/s/ngvcb7qxjglikfd/DSC07370.JPG?dl=0" alt="Drawing" style="width: 300px;"/>
+
+</center>
+
+<br>
+<br>
+
+
+My name is Juan Sebastián Vélez-Velásquez and I am currently a Ph.D. candidate at the University of Arizona.  My research covers topics in Industrial Organization, Microeconometrics, Regulation and Public Policy.
+
+<br> 
+
+I am currently on the job market and will be available for interviews at the AEA conference in January.
+
+<br> 
+
+Here you can find about my [research](research.html) and my [vita](CV.html) ([pdf](https://drive.google.com/open?id=0B79m-FIj0eKITEVnRlJndF9MdzA)). This is my [github](https://github.com/sebastianvelez), and here are some cool things that are [Not research](non_research.html)
 
