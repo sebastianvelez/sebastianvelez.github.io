@@ -11,7 +11,8 @@ output:
 
 <center>
 
-<img src="https://dl.dropboxusercontent.com/s/ngvcb7qxjglikfd/DSC07370.JPG?dl=0" alt="Drawing" style="width: 300px;"/>
+
+<img src="https://dl.dropboxusercontent.com/s/7ag7w7bvxomewj6/_63A1930.jpg?dl=0" alt="Picture of me" style="width: 250px;"/>
 
 </center>
 
@@ -27,5 +28,5 @@ I am currently on the job market and will be available for interviews at the AEA
 
 <br> 
 
-Here you can find about my [research](research.html) and my [vita](CV.html) ([pdf](https://drive.google.com/open?id=0B79m-FIj0eKITEVnRlJndF9MdzA)). This is my [github](https://github.com/sebastianvelez), and here are some cool things that are [not research](non_research_stuff.html)
+Here you can find about my [research](research.html) and here's my [vita](CV.html) ([pdf](https://drive.google.com/open?id=0B79m-FIj0eKITEVnRlJndF9MdzA)). This is my [github](https://github.com/sebastianvelez), and here are some cool things that are [not research](non_research_stuff.html)
 
