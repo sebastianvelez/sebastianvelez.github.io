@@ -4,6 +4,13 @@ output:
   html_document:
     theme: flatly
 ---
+
+<center>
+
+<img src="https://dl.dropboxusercontent.com/s/ngvcb7qxjglikfd/DSC07370.JPG?dl=0" alt="Not an actual still. That is me impersonating a trapper." style="width: 350px;"/>
+
+</center>
+
 > "Now out on their own the trappers become what they essentially are: happy people. Accompanied only by their dogs, they live off the land. They are completely self reliant. They are truly free. No rules, no taxes, no government, no laws, no bureaucracy. No phones, no radio. Equipped only with their individual values and standard of conduct"
 
 [Documentary](http://www.netflix.com/search/happy%20people)  
