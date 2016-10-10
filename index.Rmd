@@ -28,5 +28,10 @@ I am currently on the job market and will be available for interviews at the AEA
 
 <br> 
 
-Here you can find my [research](research.html) and here's my [vita](CV.html) ([pdf](https://drive.google.com/open?id=0B79m-FIj0eKITEVnRlJndF9MdzA)). This is my [github](https://github.com/sebastianvelez), and here are some cool things that are [not research](non_research_stuff.html)
+Here you can find my [research](research.html) and here's my [vita](CV.html) ([pdf](https://drive.google.com/open?id=0B79m-FIj0eKITEVnRlJndF9MdzA)). This is my [github](https://github.com/sebastianvelez), and here are some cool things that are [not research](non_research_stuff.html).
+
+____
+
+
+<img src="https://dl.dropboxusercontent.com/s/3ecue81q6bq8et8/Screenshot%20from%202016-10-10%2015%3A16%3A52.png?dl=0" alt="Picture of me" style="width: 250px;"/>
 
