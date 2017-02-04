@@ -3,7 +3,7 @@ title: "<center> Research </center>"
 output: html_document
 ---
 
-- [Job Market Paper](https://drive.google.com/open?id=0B79m-FIj0eKIS0NWakIwRDhLS0E)
+- [Job Market Paper](https://drive.google.com/open?id=0B79m-FIj0eKIS0NWakIwRDhLS0E)([Slides](JMP_slides.html))([timeline](timeline.html))
 - [The Claro merger](merger_manuscript.html) ([Slides](slides.html))  
 - [The Broadband Divide revisited: Access, Prices and Speeds](https://drive.google.com/open?id=0B79m-FIj0eKIcmt4UGxOdm9oNjA)
 - [Concentration and quality: the case of Colombia's HMOs](https://drive.google.com/open?id=0B79m-FIj0eKIdzhGUWxhQ0xJczA)
